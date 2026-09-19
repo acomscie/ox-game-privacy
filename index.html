@@ -1,0 +1,450 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>OX Game Hub Privacy Policy</title>
+<meta name="description" content="Privacy policy for the OX Game Hub Android app (com.acomscie.oxgame).">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+Thai:wght@400;500;600;700&display=swap">
+<style>
+  :root {
+    --ground: #FBFBFD; --surface: #FFFFFF; --surface-sunk: #F3F4F8;
+    --ink: #14161F; --ink-soft: #5A6072; --ink-faint: #8A90A2;
+    --rule: #E3E5EC; --rule-strong: #CDD0DC;
+    --accent: #3D46C4; --accent-soft: #EEEFFB;
+    --flag: #B4531A; --flag-soft: #FDF3EA;
+    --good: #1F7A4D; --good-soft: #ECF6F1;
+    --sans: "IBM Plex Sans Thai", "Noto Sans Thai", system-ui, -apple-system, "Segoe UI", sans-serif;
+    --mono: "IBM Plex Mono", ui-monospace, "Cascadia Mono", Consolas, monospace;
+    --measure: 68ch;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ground: #0E1018; --surface: #161A26; --surface-sunk: #1D2130;
+      --ink: #E8EAF2; --ink-soft: #A2A9BE; --ink-faint: #767D93;
+      --rule: #272C3B; --rule-strong: #3A4054;
+      --accent: #8E97F5; --accent-soft: #1C2038;
+      --flag: #E39055; --flag-soft: #2A1E14;
+      --good: #5FC292; --good-soft: #14261E;
+      color-scheme: dark;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { background: var(--ground); color: var(--ink); font-family: var(--sans); font-size: 16px; line-height: 1.7; margin: 0; -webkit-font-smoothing: antialiased; }
+  img { max-width: 100%; }
+  .wrap { max-width: var(--measure); margin: 0 auto; padding: 0 24px; }
+  header.masthead { border-bottom: 1px solid var(--rule); background: var(--surface); }
+  .masthead-inner { display: flex; flex-wrap: wrap; align-items: center; gap: 16px; padding-top: 20px; padding-bottom: 20px; }
+  .mark { width: 38px; height: 38px; border-radius: 10px; background: linear-gradient(160deg, #1D2245, #0E1120); display: grid; place-items: center; flex: none; font-weight: 700; font-size: 15px; letter-spacing: .02em; }
+  .mark .x { color: #818CF8; } .mark .o { color: #F472B6; }
+  .masthead h1 { font-size: 16px; font-weight: 600; margin: 0; letter-spacing: -.005em; }
+  .masthead .sub { font-family: var(--mono); font-size: 12px; color: var(--ink-faint); margin: 1px 0 0; }
+  .lang { margin-inline-start: auto; display: flex; gap: 2px; padding: 3px; background: var(--surface-sunk); border: 1px solid var(--rule); border-radius: 9px; }
+  .lang button { font: inherit; font-size: 13px; font-weight: 600; font-family: var(--mono); padding: 5px 12px; border: 0; border-radius: 6px; background: transparent; color: var(--ink-soft); cursor: pointer; }
+  .lang button[aria-pressed="true"] { background: var(--surface); color: var(--accent); box-shadow: 0 1px 2px rgba(0,0,0,.08); }
+  .lang button:focus-visible, a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .doc-title { font-size: clamp(28px, 5vw, 38px); line-height: 1.2; font-weight: 700; letter-spacing: -.02em; text-wrap: balance; margin: 44px 0 20px; }
+  dl.facts { display: grid; grid-template-columns: max-content 1fr; gap: 6px 20px; margin: 0 0 40px; padding: 18px 20px; background: var(--surface); border: 1px solid var(--rule); border-radius: 12px; font-size: 14px; }
+  dl.facts dt { color: var(--ink-faint); font-size: 12px; letter-spacing: .06em; text-transform: uppercase; font-weight: 600; align-self: baseline; padding-top: 3px; }
+  dl.facts dd { margin: 0; } dl.facts .id { font-family: var(--mono); font-size: 13px; }
+  section.s { margin: 0 0 38px; scroll-margin-top: 16px; }
+  h2 { font-size: 19px; font-weight: 600; letter-spacing: -.01em; margin: 0 0 12px; padding-bottom: 8px; border-bottom: 1px solid var(--rule); display: flex; gap: 12px; align-items: baseline; text-wrap: balance; }
+  h2 .n { font-family: var(--mono); font-size: 13px; color: var(--accent); flex: none; font-weight: 500; }
+  h3 { font-size: 15px; font-weight: 600; margin: 24px 0 8px; color: var(--ink); display: flex; gap: 9px; align-items: baseline; }
+  h3 .n { font-family: var(--mono); font-size: 12px; color: var(--ink-faint); flex: none; font-weight: 500; }
+  p { margin: 0 0 14px; color: var(--ink-soft); }
+  p strong, li strong, td strong { color: var(--ink); font-weight: 600; }
+  ul.plain { margin: 0 0 14px; padding-inline-start: 20px; color: var(--ink-soft); } ul.plain li { margin-bottom: 5px; }
+  a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  .tablewrap { overflow-x: auto; margin: 0 0 16px; }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; background: var(--surface); border: 1px solid var(--rule); border-radius: 10px; overflow: hidden; }
+  th, td { text-align: start; padding: 10px 14px; border-bottom: 1px solid var(--rule); vertical-align: top; }
+  thead th { font-size: 11px; letter-spacing: .07em; text-transform: uppercase; color: var(--ink-faint); background: var(--surface-sunk); font-weight: 600; white-space: nowrap; }
+  tbody tr:last-child td { border-bottom: 0; }
+  td.mono, th.mono { font-family: var(--mono); font-size: 13px; }
+  td .qual { display: block; color: var(--ink-faint); font-size: 12.5px; }
+  .pill { display: inline-block; font-family: var(--mono); font-size: 11px; font-weight: 500; padding: 2px 8px; border-radius: 999px; white-space: nowrap; }
+  .pill.stays { background: var(--good-soft); color: var(--good); } .pill.leaves { background: var(--flag-soft); color: var(--flag); }
+  .note { border: 1px solid var(--rule-strong); border-inline-start: 3px solid var(--flag); background: var(--flag-soft); border-radius: 8px; padding: 14px 16px; margin: 0 0 16px; }
+  .note p { margin: 0; color: var(--ink); font-size: 14.5px; } .note p + p { margin-top: 8px; }
+  .never { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 14px; padding: 0; list-style: none; }
+  .never li { font-size: 13px; color: var(--ink-soft); background: var(--surface); border: 1px solid var(--rule); border-radius: 6px; padding: 4px 10px; }
+  footer { border-top: 1px solid var(--rule); margin-top: 48px; padding: 24px 0 56px; font-size: 13px; color: var(--ink-faint); }
+  footer p { margin: 0 0 4px; color: inherit; font-size: inherit; }
+  [hidden] { display: none !important; }
+</style>
+</head>
+<body>
+<header class="masthead">
+  <div class="wrap masthead-inner">
+    <div class="mark" aria-hidden="true"><span class="x">X</span><span class="o">O</span></div>
+    <div>
+      <h1>OX Game Hub</h1>
+      <p class="sub">com.acomscie.oxgame</p>
+    </div>
+    <div class="lang" role="group" aria-label="Language / ภาษา">
+      <button type="button" id="btn-th" aria-pressed="true">ไทย</button>
+      <button type="button" id="btn-en" aria-pressed="false">EN</button>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+<div id="th">
+  <h1 class="doc-title">นโยบายความเป็นส่วนตัว</h1>
+
+  <dl class="facts">
+    <dt>ผู้ควบคุมข้อมูล</dt><dd>Suthep Srisung (Ae)</dd>
+    <dt>แอปพลิเคชัน</dt><dd class="id">com.acomscie.oxgame</dd>
+    <dt>มีผลตั้งแต่</dt><dd>7 กันยายน 2569</dd>
+    <dt>ติดต่อ</dt><dd><a href="mailto:suthepa1983@gmail.com">suthepa1983@gmail.com</a></dd>
+  </dl>
+
+  <section class="s">
+    <h2><span class="n">1</span> สรุปสั้น</h2>
+    <p>แอปนี้ <strong>ไม่มีระบบสมาชิก ไม่ต้องล็อกอิน และไม่ขออีเมล เบอร์โทร หรือข้อมูลที่ระบุตัวตนของคุณ</strong> แต่คุณจะตั้ง “ชื่อผู้เล่น” หนึ่งชื่อก่อนเข้าเกมทุกครั้ง ซึ่งผู้เล่นคนอื่นมองเห็นได้</p>
+    <p>ทุกเกมเล่นกับบอทได้โดยไม่ต้องเชื่อมต่ออินเทอร์เน็ตเลย</p>
+
+    <h3>สิทธิ์ที่แอปขอจากระบบ Android</h3>
+    <p>ตัวแอปเองประกาศไว้อย่างเดียวคือการเข้าถึงอินเทอร์เน็ต ส่วนที่เหลือ Google Mobile Ads SDK (AdMob) ผนวกเข้ามาเองตอนสร้างไฟล์ติดตั้ง จึงเห็นในหน้าแอปดังนี้</p>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>สิทธิ์</th><th>มาจาก</th><th>ใช้ทำอะไร</th></tr></thead>
+        <tbody>
+          <tr><td class="mono">INTERNET</td><td>แอป</td><td>เล่นออนไลน์และโหลดโฆษณา</td></tr>
+          <tr><td class="mono">ACCESS_NETWORK_STATE</td><td>AdMob</td><td>ดูว่าต่อเน็ตอยู่ไหมก่อนโหลดโฆษณา</td></tr>
+          <tr><td class="mono">AD_ID<br>ACCESS_ADSERVICES_*</td><td>AdMob</td><td>รหัสโฆษณา สำหรับแสดงและวัดผลโฆษณา</td></tr>
+          <tr><td class="mono">WAKE_LOCK<br>FOREGROUND_SERVICE</td><td>AdMob</td><td>กันเครื่องหลับระหว่างเล่นวิดีโอโฆษณา</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p><strong>ไม่มีสิทธิ์เกี่ยวกับตำแหน่ง กล้อง ไมโครโฟน รายชื่อผู้ติดต่อ หรือไฟล์ในเครื่องเลย</strong></p>
+  </section>
+
+  <section class="s">
+    <h2><span class="n">2</span> อะไรออกจากเครื่อง อะไรไม่ออก</h2>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>ข้อมูล</th><th>ปลายทาง</th><th>สถานะ</th></tr></thead>
+        <tbody>
+          <tr><td>รหัสห้อง 6 ตัว และสถานะกระดาน</td><td>Supabase</td><td><span class="pill leaves">ออกจากเครื่อง</span></td></tr>
+          <tr><td>คำศัพท์และคำใบ้ที่คุณพิมพ์เอง<span class="qual">Hangman และเดาศัพท์ โหมดออนไลน์</span></td><td>Supabase</td><td><span class="pill leaves">ออกจากเครื่อง</span></td></tr>
+          <tr><td>ชื่อผู้เล่นที่คุณตั้ง</td><td>Supabase</td><td><span class="pill leaves">ออกจากเครื่อง</span></td></tr>
+          <tr><td>สถิติแพ้ชนะ และประเทศที่คุณเลือกเอง<span class="qual">เฉพาะเกมที่เล่นกับคนจริงจนจบ</span></td><td>Supabase</td><td><span class="pill leaves">ออกจากเครื่อง</span></td></tr>
+          <tr><td>รายงานเนื้อหาที่คุณส่ง</td><td>Supabase</td><td><span class="pill leaves">ออกจากเครื่อง</span></td></tr>
+          <tr><td>รหัสโฆษณา (Advertising ID)</td><td>Google AdMob</td><td><span class="pill leaves">ออกจากเครื่อง</span></td></tr>
+          <tr><td>ระดับความยากของบอท</td><td>เครื่องคุณเท่านั้น</td><td><span class="pill stays">ไม่ออกจากเครื่อง</span></td></tr>
+          <tr><td>ธีมกระดานที่ปลดล็อกไว้</td><td>เครื่องคุณเท่านั้น</td><td><span class="pill stays">ไม่ออกจากเครื่อง</span></td></tr>
+          <tr><td>รายชื่อผู้เล่นที่คุณเลือกซ่อน</td><td>เครื่องคุณเท่านั้น</td><td><span class="pill stays">ไม่ออกจากเครื่อง</span></td></tr>
+          <tr><td>การเล่นกับบอททั้งหมด</td><td>เครื่องคุณเท่านั้น</td><td><span class="pill stays">ไม่ออกจากเครื่อง</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3><span class="n">ก</span> ข้อมูลการเล่นในโหมดออนไลน์</h3>
+    <p>เกิดเฉพาะเมื่อคุณสร้างห้องหรือเข้าห้อง แอปส่งรหัสห้อง ชนิดเกม สถานะกระดาน คำที่คุณพิมพ์ และชื่อผู้เล่นสองฝ่าย ไปเก็บที่ Supabase เพื่อให้ทั้งสองฝั่งเห็นกระดานตรงกัน อิโมจิที่กดส่งผ่านทันทีโดยไม่บันทึกลงฐานข้อมูล</p>
+    <div class="note">
+      <p><strong>ห้องออนไลน์เปิดให้ผู้เล่นคนอื่นเข้ามาดูได้</strong> ชื่อผู้เล่น ชนิดเกม และกระดานของห้องที่กำลังเล่นอยู่ จะแสดงในรายการ “กำลังเล่นอยู่ตอนนี้” ให้ผู้ใช้ทุกคนเห็น และผู้ชมจะเห็นกระดานแบบเรียลไทม์ แต่เดินหมากไม่ได้ และไม่เห็นคำเฉลยที่ยังไม่ถูกทาย ถ้าไม่ต้องการให้คนอื่นเห็น กรุณาเล่นกับบอทแทน</p>
+      <p>คำศัพท์และคำใบ้เป็นข้อความที่คุณพิมพ์เอง และผู้เล่นอีกฝ่ายจะเห็น <strong>กรุณาอย่าพิมพ์ข้อมูลส่วนตัวหรือข้อมูลอ่อนไหวลงในช่องดังกล่าว</strong></p>
+    </div>
+
+    <h3><span class="n">ข</span> ชื่อผู้เล่น</h3>
+    <p>ก่อนเข้าเกมทุกครั้งคุณจะตั้งชื่อหนึ่งชื่อ เก็บไว้ชั่วคราวเพื่อกันไม่ให้ผู้เล่นสองคนใช้ชื่อซ้ำกันในเวลาเดียวกัน และเพื่อแสดงในรายการห้องที่กำลังเล่น</p>
+    <p>ชื่อจะถูกปล่อยคืนทันทีที่คุณปิดแอป หรืออัตโนมัติเมื่อไม่มีสัญญาณจากเครื่องคุณเกิน 2 นาที ไม่มีการผูกชื่อกับอุปกรณ์หรือบุคคล และตั้งชื่อใหม่ได้ทุกครั้งที่เปิดแอป</p>
+    <p><strong>กรุณาอย่าใช้ชื่อจริง เบอร์โทร หรือข้อมูลที่ระบุตัวตนเป็นชื่อผู้เล่น</strong> เพราะผู้ใช้คนอื่นจะเห็นชื่อนี้</p>
+
+    <h3><span class="n">ค</span> กระดานอันดับโลก และประเทศที่แสดงคู่กับชื่อ</h3>
+    <p>เมื่อคุณเล่นกับ<strong>คนจริง</strong>จนจบเกม แอปจะบันทึกผลแพ้ ชนะ หรือเสมอ ผูกกับชื่อผู้เล่นที่คุณตั้งไว้ เพื่อจัดอันดับให้ผู้ใช้ทุกคนเห็น เกมที่เล่นกับบอทไม่ถูกนับ คู่กับชื่อจะมีธงของ<strong>ประเทศที่คุณเลือกเอง</strong>ในหน้าตั้งชื่อ</p>
+    <p>เรื่องประเทศมีสองข้อที่อยากให้ทราบตรง ๆ</p>
+    <ul class="plain">
+      <li><strong>แอปไม่ได้ดูตำแหน่งของเครื่องคุณ</strong> ไม่ได้ขอสิทธิ์ location ใด ๆ และไม่ได้ส่งไปถามเซิร์ฟเวอร์ไหนว่า IP ของคุณอยู่ประเทศอะไร</li>
+      <li>ค่าเริ่มต้นเดามาจาก<strong>ภาษาที่ตั้งไว้ในเครื่อง</strong>เท่านั้น ซึ่งอาจไม่ตรงกับที่คุณอยู่จริง และคุณเปลี่ยนหรือเลือก “ไม่ระบุประเทศ” ได้ตลอด</li>
+    </ul>
+    <p>ต่างจากชื่อผู้เล่นที่ถูกปล่อยคืนเมื่อปิดแอป <strong>สถิติบนกระดานอันดับจะอยู่ต่อ</strong> เพราะผูกกับ “ชื่อ” ไม่ใช่กับตัวบุคคล ถ้ามีคนอื่นมาใช้ชื่อเดียวกันในภายหลัง สถิตินั้นจะกลายเป็นของเขาไปด้วย ซึ่งเป็นข้อจำกัดที่เลี่ยงไม่ได้ในแอปที่ไม่มีระบบล็อกอิน</p>
+
+    <h3><span class="n">ง</span> การรายงานเนื้อหาไม่เหมาะสม</h3>
+    <p>เมื่อคุณกดปุ่ม ⚑ เพื่อรายงาน แอปจะบันทึกประเภทเรื่องที่รายงาน ชื่อผู้เล่นหรือคำที่ถูกรายงาน รหัสห้อง เหตุผลที่คุณเลือก ข้อความเพิ่มเติมที่คุณพิมพ์ และชื่อผู้เล่นของคุณในฐานะผู้รายงาน เพื่อให้ผู้ดูแลตรวจสอบได้</p>
+    <p>ส่วน<strong>รายชื่อผู้เล่นที่คุณเลือกซ่อน</strong>เก็บไว้ในเครื่องคุณเท่านั้น ไม่ถูกส่งออกจากเครื่อง และคนที่ถูกซ่อนไม่มีทางรู้</p>
+
+    <h3><span class="n">จ</span> การตั้งค่าที่เก็บไว้บนเครื่องคุณเอง</h3>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>ค่า</th><th class="mono">คีย์</th><th>ส่งออกจากเครื่องไหม</th></tr></thead>
+        <tbody>
+          <tr><td>ระดับความยากของบอท</td><td class="mono">gamehub:difficulty</td><td>ไม่</td></tr>
+          <tr><td>ประเทศที่เลือกล่าสุด</td><td class="mono">gamehub:country</td><td>ส่งพร้อมผลการแข่งขัน เฉพาะตอนเล่นกับคนจริงจนจบเกม</td></tr>
+          <tr><td>ธีมกระดานที่ปลดล็อกไว้</td><td class="mono">gamehub:board-themes</td><td>ไม่</td></tr>
+          <tr><td>ธีมกระดานที่ใช้อยู่</td><td class="mono">gamehub:board-theme</td><td>ไม่</td></tr>
+          <tr><td>ผู้เล่นที่คุณเลือกซ่อน</td><td class="mono">gamehub:blocked</td><td>ไม่</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>ทั้งหมดจะถูกลบเมื่อคุณถอนการติดตั้งแอป ธีมที่ปลดล็อกไว้ผูกกับเครื่อง ไม่ได้ผูกกับชื่อผู้เล่นหรือบัญชีใด ๆ เปลี่ยนเครื่องแล้วต้องปลดใหม่</p>
+
+    <h3><span class="n">ฉ</span> โฆษณา (Google AdMob)</h3>
+    <p>แอปมีโฆษณาแบบผู้ใช้เลือกดูเองเพื่อรับตัวช่วยในเกมและปลดธีมกระดาน ให้บริการโดย Google AdMob ซึ่งอาจเก็บและใช้<strong>รหัสโฆษณาและข้อมูลอุปกรณ์</strong>เพื่อแสดงและวัดผลโฆษณา ตามนโยบายของ Google</p>
+    <p>ผู้พัฒนาไม่ได้เข้าถึงหรือเก็บรหัสโฆษณาของคุณโดยตรง คุณรีเซ็ตหรือลบรหัสโฆษณาได้ที่ <strong>ตั้งค่า ▸ Google ▸ โฆษณา</strong> บนเครื่อง Android</p>
+  </section>
+
+  <section class="s">
+    <h2><span class="n">3</span> สิ่งที่แอปนี้ไม่ทำ</h2>
+    <ul class="never">
+      <li>ไม่เก็บอีเมล เบอร์โทร</li>
+      <li>ไม่มีระบบสมาชิก</li>
+      <li>ไม่อ่านตำแหน่งของเครื่อง</li>
+      <li>ไม่เข้าถึงกล้อง</li>
+      <li>ไม่เข้าถึงไมโครโฟน</li>
+      <li>ไม่เข้าถึงรายชื่อผู้ติดต่อ</li>
+      <li>ไม่เข้าถึงภาพถ่ายหรือไฟล์</li>
+      <li>ไม่มี analytics</li>
+      <li>ไม่มี crash reporting</li>
+      <li>ไม่ขายข้อมูลให้บุคคลภายนอก</li>
+    </ul>
+    <p>ประเทศที่แสดงข้างชื่อเป็นค่าที่คุณเลือกเอง โดยมีค่าเริ่มต้นเดาจากภาษาที่ตั้งไว้ในเครื่อง ไม่ใช่ตำแหน่งของเครื่อง</p>
+  </section>
+
+  <section class="s">
+    <h2><span class="n">4</span> ผู้ให้บริการภายนอก</h2>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>ผู้ให้บริการ</th><th>ใช้ทำอะไร</th><th>นโยบาย</th></tr></thead>
+        <tbody>
+          <tr><td>Supabase</td><td>เก็บสถานะห้องออนไลน์ ชื่อผู้เล่นที่จองไว้ กระดานอันดับ และรายงานเนื้อหา</td><td><a href="https://supabase.com/privacy">supabase.com/privacy</a></td></tr>
+          <tr><td>Google AdMob</td><td>แสดงโฆษณา</td><td><a href="https://policies.google.com/privacy">policies.google.com/privacy</a></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>ทั้งสองรายรับส่งข้อมูลผ่านการเข้ารหัส HTTPS ทั้งหมด</p>
+  </section>
+
+  <section class="s" id="delete-th">
+    <h2><span class="n">5</span> ระยะเวลาเก็บและการลบข้อมูล</h2>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>ข้อมูล</th><th>เก็บนานแค่ไหน</th></tr></thead>
+        <tbody>
+          <tr><td>ห้องเกม</td><td>ลบอัตโนมัติเมื่อไม่ถูกใช้งานเกิน 30 วัน</td></tr>
+          <tr><td>ชื่อผู้เล่นที่จองไว้</td><td>ปล่อยคืนเมื่อปิดแอป หรืออัตโนมัติภายใน 2 นาทีหลังไม่มีสัญญาณ</td></tr>
+          <tr><td>สถิติบนกระดานอันดับ</td><td><strong>เก็บต่อเนื่อง</strong> เพราะเป็นอันดับสะสม</td></tr>
+          <tr><td>รายงานเนื้อหา</td><td>เก็บไว้จนกว่าผู้ดูแลจะตรวจสอบเสร็จ</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>เนื่องจากแอปไม่มีระบบสมาชิก จึงไม่มีวิธีเชื่อมโยงข้อมูลเหล่านี้กับตัวบุคคลได้ หากต้องการให้ลบข้อมูลเป็นการเฉพาะ ส่งรายละเอียดมาที่ <a href="mailto:suthepa1983@gmail.com">suthepa1983@gmail.com</a> — ห้องเกมส่งรหัสห้องมา ส่วนสถิติบนกระดานอันดับส่งชื่อผู้เล่นมา</p>
+  </section>
+
+  <section class="s">
+    <h2><span class="n">6</span> เด็กและเยาวชน</h2>
+    <p>แอปนี้กำหนดกลุ่มผู้ใช้เป็น <strong>อายุ 13 ปีขึ้นไป</strong> ไม่ได้ออกแบบหรือทำการตลาดกับเด็กอายุต่ำกว่า 13 ปี และตั้งค่าโฆษณาให้ไม่ถือเป็นเนื้อหาที่มุ่งเป้าเด็ก พร้อมจำกัดเรตโฆษณาไม่ให้เกินระดับวัยรุ่น</p>
+  </section>
+
+  <section class="s">
+    <h2><span class="n">7</span> สิทธิของคุณ</h2>
+    <p>ตาม พ.ร.บ.คุ้มครองข้อมูลส่วนบุคคล พ.ศ. 2562 (PDPA) คุณมีสิทธิขอเข้าถึง แก้ไข หรือลบข้อมูลส่วนบุคคลของคุณ</p>
+    <p>แอปนี้ไม่ได้เก็บข้อมูลที่ระบุตัวตนของคุณ เช่น ชื่อจริง อีเมล หรือเบอร์โทร สิ่งที่เก็บและอาจเชื่อมโยงกลับมาถึงคุณได้คือ <strong>ชื่อผู้เล่นที่คุณตั้งเอง</strong> ซึ่งปรากฏบนกระดานอันดับและในรายงานเนื้อหา ถ้าต้องการให้ลบ ส่งชื่อนั้นมาที่ <a href="mailto:suthepa1983@gmail.com">suthepa1983@gmail.com</a> ได้ตลอด</p>
+  </section>
+
+  <section class="s">
+    <h2><span class="n">8</span> การเปลี่ยนแปลงนโยบาย</h2>
+    <p>หากมีการแก้ไขนโยบายนี้ จะปรับวันที่ “มีผลตั้งแต่” ด้านบน และประกาศในหน้านี้</p>
+  </section>
+</div>
+
+<div id="en" hidden>
+  <h1 class="doc-title">Privacy Policy</h1>
+
+  <dl class="facts">
+    <dt>Controller</dt><dd>Suthep Srisung (Ae)</dd>
+    <dt>Application</dt><dd class="id">com.acomscie.oxgame</dd>
+    <dt>Effective</dt><dd>7 September 2026</dd>
+    <dt>Contact</dt><dd><a href="mailto:suthepa1983@gmail.com">suthepa1983@gmail.com</a></dd>
+  </dl>
+
+  <section class="s">
+    <h2><span class="n">1</span> Summary</h2>
+    <p>This app has <strong>no user accounts and no sign-in, and asks for no email, phone number or other identifying information about you.</strong> You do choose a display name before each session, which other players can see.</p>
+    <p>Every game is fully playable against the bot with no internet connection.</p>
+
+    <h3>Android permissions</h3>
+    <p>The app itself declares only internet access. The rest are merged in by the Google Mobile Ads SDK (AdMob) when the install file is built, so the store listing shows:</p>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>Permission</th><th>From</th><th>Used for</th></tr></thead>
+        <tbody>
+          <tr><td class="mono">INTERNET</td><td>the app</td><td>Online play and loading ads</td></tr>
+          <tr><td class="mono">ACCESS_NETWORK_STATE</td><td>AdMob</td><td>Checking connectivity before loading an ad</td></tr>
+          <tr><td class="mono">AD_ID<br>ACCESS_ADSERVICES_*</td><td>AdMob</td><td>Advertising ID, to serve and measure ads</td></tr>
+          <tr><td class="mono">WAKE_LOCK<br>FOREGROUND_SERVICE</td><td>AdMob</td><td>Keeping the screen awake during a video ad</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p><strong>There is no location, camera, microphone, contacts or file permission.</strong></p>
+  </section>
+
+  <section class="s">
+    <h2><span class="n">2</span> What leaves your device, and what does not</h2>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>Data</th><th>Destination</th><th>Status</th></tr></thead>
+        <tbody>
+          <tr><td>Six-character room code and board state</td><td>Supabase</td><td><span class="pill leaves">Leaves device</span></td></tr>
+          <tr><td>Words and hints you type yourself<span class="qual">Hangman and เดาศัพท์, online mode</span></td><td>Supabase</td><td><span class="pill leaves">Leaves device</span></td></tr>
+          <tr><td>The display name you chose</td><td>Supabase</td><td><span class="pill leaves">Leaves device</span></td></tr>
+          <tr><td>Win/loss record and the country you picked<span class="qual">Only after a finished game against another person</span></td><td>Supabase</td><td><span class="pill leaves">Leaves device</span></td></tr>
+          <tr><td>Content reports you send</td><td>Supabase</td><td><span class="pill leaves">Leaves device</span></td></tr>
+          <tr><td>Advertising ID</td><td>Google AdMob</td><td><span class="pill leaves">Leaves device</span></td></tr>
+          <tr><td>Bot difficulty</td><td>Your device only</td><td><span class="pill stays">Stays on device</span></td></tr>
+          <tr><td>Board themes you unlocked</td><td>Your device only</td><td><span class="pill stays">Stays on device</span></td></tr>
+          <tr><td>Players you chose to hide</td><td>Your device only</td><td><span class="pill stays">Stays on device</span></td></tr>
+          <tr><td>All play against the bot</td><td>Your device only</td><td><span class="pill stays">Stays on device</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3><span class="n">a</span> Online match data</h3>
+    <p>This happens only when you create or join a room. The app stores the room code, game type, board state, the words you type and both display names with Supabase, so both players see the same board. Emoji reactions are relayed live and never written to the database.</p>
+    <div class="note">
+      <p><strong>Online rooms are open for other players to watch.</strong> The display names, game type and live board of a room in progress appear in the “playing now” list for every user, and spectators see the board update in real time — they cannot move, and cannot see an answer that has not been guessed yet. Play against the bot if you would rather not be watched.</p>
+      <p>The word and hint fields are free text you type, and the other player sees them. <strong>Please do not enter personal or sensitive information there.</strong></p>
+    </div>
+
+    <h3><span class="n">b</span> Your display name</h3>
+    <p>You pick one name before each session. It is held briefly so that no two players use the same name at the same time, and so your room can be listed while you play.</p>
+    <p>The name is released the moment you close the app, or automatically after two minutes with no signal from your device. It is never tied to your device or to you as a person, and you can pick a different one every time.</p>
+    <p><strong>Please do not use your real name, phone number, or anything else that identifies you</strong> — other players see this name.</p>
+
+    <h3><span class="n">c</span> Global standings and the country beside your name</h3>
+    <p>When you finish a game <strong>against another person</strong>, the result is recorded against the name you chose, so that standings can be shown to everyone. Games against the bot are not counted. Beside the name sits the flag of <strong>a country you pick yourself</strong> on the name screen.</p>
+    <p>Two things about the country, stated plainly:</p>
+    <ul class="plain">
+      <li><strong>The app does not read your device’s location.</strong> It requests no location permission and never asks any server what country your IP is in.</li>
+      <li>The default is guessed from <strong>your device’s language setting</strong> alone, which may not match where you actually are. You can change it, or choose “no country”, at any time.</li>
+    </ul>
+    <p>Unlike the display name, which is released when you close the app, <strong>standings persist</strong>, because they belong to a <em>name</em> rather than to a person. If someone else later uses the same name, they inherit that record — an unavoidable limit of an app with no sign-in.</p>
+
+    <h3><span class="n">d</span> Reporting objectionable content</h3>
+    <p>When you press ⚑ to report something, the app records the kind of report, the player name or word in question, the room code, the reason you picked, any detail you typed, and your own display name as the reporter, so a moderator can review it.</p>
+    <p>The list of <strong>players you chose to hide</strong> is kept on your device only. It never leaves your device, and the person hidden has no way of knowing.</p>
+
+    <h3><span class="n">e</span> Settings kept on your own device</h3>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>Value</th><th class="mono">Key</th><th>Leaves your device?</th></tr></thead>
+        <tbody>
+          <tr><td>Bot difficulty</td><td class="mono">gamehub:difficulty</td><td>No</td></tr>
+          <tr><td>Country last picked</td><td class="mono">gamehub:country</td><td>Only with a match result, after a game against another person</td></tr>
+          <tr><td>Board themes unlocked</td><td class="mono">gamehub:board-themes</td><td>No</td></tr>
+          <tr><td>Board theme in use</td><td class="mono">gamehub:board-theme</td><td>No</td></tr>
+          <tr><td>Players you chose to hide</td><td class="mono">gamehub:blocked</td><td>No</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>All of it is removed when you uninstall the app. Unlocked themes belong to the device, not to a name or an account — switch devices and you unlock them again.</p>
+
+    <h3><span class="n">f</span> Advertising (Google AdMob)</h3>
+    <p>The app shows opt-in rewarded ads for in-game hints and to unlock board themes. Ads are served by Google AdMob, which may collect and use your <strong>Advertising ID and device information</strong> to serve and measure ads, under Google’s own policies.</p>
+    <p>The developer does not receive or store your Advertising ID. You can reset or delete it under <strong>Settings ▸ Google ▸ Ads</strong> on your Android device.</p>
+  </section>
+
+  <section class="s">
+    <h2><span class="n">3</span> What this app does not do</h2>
+    <ul class="never">
+      <li>No emails or phone numbers</li>
+      <li>No accounts</li>
+      <li>No device location</li>
+      <li>No camera</li>
+      <li>No microphone</li>
+      <li>No contacts</li>
+      <li>No photos or files</li>
+      <li>No analytics</li>
+      <li>No crash reporting</li>
+      <li>No sale of data to third parties</li>
+    </ul>
+    <p>The country beside your name is one you pick yourself, defaulting to a guess from your device’s language — not your device’s location.</p>
+  </section>
+
+  <section class="s">
+    <h2><span class="n">4</span> Third-party services</h2>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>Provider</th><th>Used for</th><th>Policy</th></tr></thead>
+        <tbody>
+          <tr><td>Supabase</td><td>Online room state, reserved display names, standings, and content reports</td><td><a href="https://supabase.com/privacy">supabase.com/privacy</a></td></tr>
+          <tr><td>Google AdMob</td><td>Serving ads</td><td><a href="https://policies.google.com/privacy">policies.google.com/privacy</a></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>All traffic to both is encrypted over HTTPS.</p>
+  </section>
+
+  <section class="s" id="delete-en">
+    <h2><span class="n">5</span> Retention and deletion</h2>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>Data</th><th>Kept for</th></tr></thead>
+        <tbody>
+          <tr><td>Room data</td><td>Deleted automatically after 30 days without activity</td></tr>
+          <tr><td>Reserved display names</td><td>Released when you close the app, or automatically after two minutes with no signal</td></tr>
+          <tr><td>Standings record</td><td><strong>Kept indefinitely</strong>, because standings are cumulative</td></tr>
+          <tr><td>Content reports</td><td>Kept until a moderator has reviewed them</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Because the app has no accounts, none of this can be linked back to a person. To have something deleted, write to <a href="mailto:suthepa1983@gmail.com">suthepa1983@gmail.com</a> — send the room code for a room, or the display name for a standings record.</p>
+  </section>
+
+  <section class="s">
+    <h2><span class="n">6</span> Children</h2>
+    <p>This app targets an audience of <strong>13 and older</strong>. It is not designed for or marketed to children under 13, and its ads are configured as not child-directed, with ad content capped at a teen rating.</p>
+  </section>
+
+  <section class="s">
+    <h2><span class="n">7</span> Your rights</h2>
+    <p>Under Thailand’s Personal Data Protection Act B.E. 2562 (PDPA) you have the right to access, correct or delete your personal data.</p>
+    <p>This app stores nothing that identifies you — no real name, email or phone number. What it does store that could lead back to you is <strong>the display name you chose</strong>, which appears on the standings and in content reports. Write to <a href="mailto:suthepa1983@gmail.com">suthepa1983@gmail.com</a> with that name and we will delete it.</p>
+  </section>
+
+  <section class="s">
+    <h2><span class="n">8</span> Changes</h2>
+    <p>If this policy changes, the “Effective” date above will be updated and the revision published on this page.</p>
+  </section>
+</div>
+
+</main>
+
+<footer class="wrap">
+  <p>© 2026 Suthep Srisung (Ae) · สงวนลิขสิทธิ์ / All rights reserved</p>
+  <p>OX Game Hub · <span style="font-family:var(--mono)">com.acomscie.oxgame</span></p>
+</footer>
+
+<script>
+  (function () {
+    var th = document.getElementById('th');
+    var en = document.getElementById('en');
+    var bTh = document.getElementById('btn-th');
+    var bEn = document.getElementById('btn-en');
+
+    function show(lang) {
+      var thai = lang === 'th';
+      th.hidden = !thai;
+      en.hidden = thai;
+      bTh.setAttribute('aria-pressed', String(thai));
+      bEn.setAttribute('aria-pressed', String(!thai));
+      document.documentElement.lang = thai ? 'th' : 'en';
+    }
+
+    bTh.addEventListener('click', function () { show('th'); });
+    bEn.addEventListener('click', function () { show('en'); });
+
+    // ?lang=th or ?lang=en wins; otherwise open in English unless the reader's language is Thai.
+    var q = (location.search.match(/[?&]lang=(th|en)/) || [])[1];
+    if (q) show(q);
+    else if (!(navigator.language || '').toLowerCase().startsWith('th')) show('en');
+  })();
+</script>
+</body>
+</html>
